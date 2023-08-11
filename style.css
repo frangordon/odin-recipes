@@ -1,0 +1,68 @@
+/* the asterix is a universal selector - it will select elements of any type */
+
+* {
+    color: darkslategray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* the # is a ID selector. 
+The major difference between class selectors and ID selectors is
+that an element can only have one ID
+
+in HTML and ID would look like <h1 id='header'>Odin Recipes</h1>
+in CSS that's linked with #header {}
+
+whereas a CLASS would look like <div class="subsection-header">Latest Posts</div>
+in CSS that looks like .subsection-preview {}
+*/
+
+#header {
+    background-color: lightcoral;
+}
+
+#image-label {
+    color: lightcoral;
+}
+
+/* The grouping selector 
+to cut down on repetition, we can group these selectors together as a comma-separated list
+*/
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.read {
+    /* several unique declarations */
+}
+
+.unread {
+    /* several unique delcarations*/
+}
+
+.subsection#preview {
+    color: blue;
+}
+
+.subsection#preview {
+    color: red;
+}
+
+.subsection-header {
+    background-color: lightcoral;
+}
+
+/* Order matters! 
+When two selectors have the same level of specificity, the rule
+that is defined last has the most precendence - the last rule overrides
+any rule before it.
+*/
+
+img {
+    height: auto;
+    width: 40rem;
+}
+
+
+
